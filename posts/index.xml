@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on (Co)sheaf club</title>
+    <link>https://cosheafclub.github.io/posts/</link>
+    <description>Recent content in Posts on (Co)sheaf club</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Sep 2018 14:10:31 +0200</lastBuildDate>
+    
+	<atom:link href="https://cosheafclub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sheaf story</title>
+      <link>https://cosheafclub.github.io/posts/sheafstory/</link>
+      <pubDate>Sun, 16 Sep 2018 14:10:31 +0200</pubDate>
+      
+      <guid>https://cosheafclub.github.io/posts/sheafstory/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
