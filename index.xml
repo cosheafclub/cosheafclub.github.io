@@ -6,10 +6,21 @@
     <description>Recent content on (Co)sheaf club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Sep 2018 14:10:31 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 16 Sep 2018 14:51:10 +0200</lastBuildDate>
     
 	<atom:link href="https://cosheafclub.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Help</title>
+      <link>https://cosheafclub.github.io/help/</link>
+      <pubDate>Sun, 16 Sep 2018 14:51:10 +0200</pubDate>
+      
+      <guid>https://cosheafclub.github.io/help/</guid>
+      <description>Setup local environment:
+ Install Git Install Hugo Execute the command: git clone https://github.com/cosheafclub/hugo-blog.git  Create a post:
+ Go to the directory hugo-blog Execute the command: hugo new posts/&amp;lt;post-name&amp;gt;.mmark Edit the file content/posts/&amp;lt;post-name&amp;gt;.mmark with your favorite text editor. Before uploading the content, try it in your computer by running the command hugo server -D. Open a web browser and go to http://localhost:1313/ Once you are happy run execute the command hugo, commit and push the repository.</description>
+    </item>
     
     <item>
       <title>Sheaf story</title>

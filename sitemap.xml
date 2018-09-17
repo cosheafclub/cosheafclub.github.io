@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cosheafclub.github.io/help/</loc>
+    <lastmod>2018-09-16T14:51:10+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cosheafclub.github.io/posts/sheafstory/</loc>
     <lastmod>2018-09-16T14:10:31+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://cosheafclub.github.io/</loc>
-    <lastmod>2018-09-16T14:10:31+02:00</lastmod>
+    <lastmod>2018-09-16T14:51:10+02:00</lastmod>
     <priority>0</priority>
   </url>
   
