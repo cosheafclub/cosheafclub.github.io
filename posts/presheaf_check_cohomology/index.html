@@ -34,8 +34,6 @@ where \(U_I = \cap_{i \in I} U_i\)." />
 <meta property="og:url" content="https://cosheafclub.github.io/posts/presheaf_check_cohomology/" /><meta property="article:published_time" content="2018-10-05T11:26:13&#43;02:00"/>
 <meta property="article:modified_time" content="2018-10-05T11:26:13&#43;02:00"/>
 
-
-    
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -44,11 +42,15 @@ where \(U_I = \cap_{i \in I} U_i\)." />
       styles: {".MathJax_Preview": {visibility: "hidden"}}
     },
     tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
-    TeX: {extensions: ["AMSmath.js","AMSsymbols.js","http://sonoisa.github.io/xyjax_ext/xypic.js"]}
-    //                                               ^^^^^^^^load xypic.js
+    TeX: {extensions: ["AMSmath.js","AMSsymbols.js","http://cosheafclub.github.io/xypic.js"]}
   });
 </script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+    
+
 
 <link rel="stylesheet" href="/css/hyde-hyde.css">
 <link rel="stylesheet" href="/css/print.css" media="print">
@@ -198,26 +200,13 @@ where the last equality follow from the correspondence between the pairs
 U_I^{(j)} \ar[ur] & \  & U_I^{(k)} \ar[ul]\\
 \ & U_I \ar[ur] \ar[ul] \ar[uu]
 }
-$$</div>
 
-
-<h1>XyJax Sample Page</h1>
-<hr>
-<p>
-
-\[
-\begin{xy}
-\xymatrix {
-U \ar@/_/[ddr]_y \ar@{.>}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
- & X \times_Z Y \ar[d]^q \ar[r]_p & X \ar[d]_f \\
- & Y \ar[r]^g & Z
+\xymatrix{
+\ & F(U_I^{(j,k)}) \ar[ld]_{ \rho_{U_I^{(j)}, U_I^{(j,k)}}} \ar[rd]^{ \rho_{U_I^{(k)}, U_I^{(j,k)}}} \ar[dd] & \\
+F(U_I^{(j)}) \ar[dr]_{ \rho_{U_I, U_I^{(j)}}} & \  & F(U_I^{(k)}) \ar[dl]^{ \rho_{U_I, U_I^{(k)}}}\\
+\ & F(U_I) 
 }
-\end{xy}
-\]
-
-</p>
-<hr>
-</blockquote>
+$$</div>
 
   </div>
   
