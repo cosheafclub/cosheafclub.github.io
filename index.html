@@ -1,7 +1,7 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
     
-  <head> 
+  <head>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cosheafclub.github.io/" />
-<meta property="og:updated_time" content="2018-09-16T14:51:10&#43;02:00"/>
+<meta property="og:updated_time" content="2018-10-05T11:26:13&#43;02:00"/>
 
     
 
@@ -106,15 +106,19 @@
     
       <div class="post-list__item">
         <span class="item__title--big">
-          <a href="/posts/sheafstory/">Sheaf story</a>
+          <a href="/posts/presheaf_check_cohomology/">Cech Cohomology of Pre-Sheaves</a>
           
         </span>
         <span class="item__date">
-          Sep 16, 2018
+          Oct 05, 2018
         </span>
         
+        Let \(X\) be a topological space and let \(F\) be a pre-sheaf of vector spaces on \(X\). Given an open cover \(\mathcal{U} = \{ U_i \}_{I \in \Lambda}\) of \(X\), we define the Cech Cohomology of \(F\) as the cohomology of the cochain complex
+\[ (C^\bullet (\mathcal{U},F), \delta^\bullet) \hspace{0.5cm} {\rm where} \hspace{0.5cm} C^p (\mathcal{U},F) = \prod\limits_{|I| = p + 1} F(U_I) \hspace{0.5cm} {\rm for}\hspace{0.5cm} I \in N(\mathcal{U}). \]
+where \(U_I = \cap_{i \in I} U_i\).
         
         
+          ... <a class="read-more-symbol" href="/posts/presheaf_check_cohomology/">➦</a>
         
         </div>
      
@@ -128,6 +132,19 @@
   <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
   integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
   crossorigin="anonymous">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    "HTML-CSS": {
+      styles: {".MathJax_Preview": {visibility: "hidden"}}
+    },
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+    TeX: {extensions: ["AMSmath.js","AMSsymbols.js","http://sonoisa.github.io/xyjax_ext/xypic.js"]}
+    //                                               ^^^^^^^^load xypic.js
+  });
 </script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">

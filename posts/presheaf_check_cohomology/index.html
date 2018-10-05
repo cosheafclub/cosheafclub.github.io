@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.48" />
+
+    
+    
+    
+
+<title>Cech Cohomology of Pre-Sheaves • (Co)sheaf club</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cech Cohomology of Pre-Sheaves"/>
+<meta name="twitter:description" content="Let \(X\) be a topological space and let \(F\) be a pre-sheaf of vector spaces on \(X\). Given an open cover \(\mathcal{U} = \{ U_i \}_{I \in \Lambda}\) of \(X\), we define the Cech Cohomology of \(F\) as the cohomology of the cochain complex
+\[ (C^\bullet (\mathcal{U},F), \delta^\bullet) \hspace{0.5cm} {\rm where} \hspace{0.5cm} C^p (\mathcal{U},F) = \prod\limits_{|I| = p &#43; 1} F(U_I) \hspace{0.5cm} {\rm for}\hspace{0.5cm} I \in N(\mathcal{U}). \]
+where \(U_I = \cap_{i \in I} U_i\)."/>
+
+<meta property="og:title" content="Cech Cohomology of Pre-Sheaves" />
+<meta property="og:description" content="Let \(X\) be a topological space and let \(F\) be a pre-sheaf of vector spaces on \(X\). Given an open cover \(\mathcal{U} = \{ U_i \}_{I \in \Lambda}\) of \(X\), we define the Cech Cohomology of \(F\) as the cohomology of the cochain complex
+\[ (C^\bullet (\mathcal{U},F), \delta^\bullet) \hspace{0.5cm} {\rm where} \hspace{0.5cm} C^p (\mathcal{U},F) = \prod\limits_{|I| = p &#43; 1} F(U_I) \hspace{0.5cm} {\rm for}\hspace{0.5cm} I \in N(\mathcal{U}). \]
+where \(U_I = \cap_{i \in I} U_i\)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cosheafclub.github.io/posts/presheaf_check_cohomology/" /><meta property="article:published_time" content="2018-10-05T11:26:13&#43;02:00"/>
+<meta property="article:modified_time" content="2018-10-05T11:26:13&#43;02:00"/>
+
+    
+
+
+<link rel="stylesheet" href="/css/hyde-hyde.css">
+<link rel="stylesheet" href="/css/print.css" media="print">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://cosheafclub.github.io/">(Co)sheaf club</a>
+      </span>
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div>
+	<ul class="sidebar-nav">
+		 
+		
+		</li>
+	</ul>
+</div>
+
+    <p>
+      <section class="social">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+    </p>
+    <p class="copyright">
+      &copy; 2018 .
+      <a href="https://creativecommons.org/licenses/by-sa/4.0">Some Rights Reserved</a>.
+      <br/>Built with
+      <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+      
+    </p>
+  </div>
+  <div>
+  </div>
+</div>
+
+        <div class="content container">
+            
+    <article>
+  <header>
+    <h1>Cech Cohomology of Pre-Sheaves</h1>
+     
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Oct 05, 2018
+    
+    
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 2 min read
+</div>
+
+
+  </header>
+  <div class="post">
+    <p>Let <span  class="math">\(X\)</span> be a topological space and let  <span  class="math">\(F\)</span> be a pre-sheaf of vector
+spaces on <span  class="math">\(X\)</span>.  Given an open cover <span  class="math">\(\mathcal{U} = \{ U_i \}_{I \in \Lambda}\)</span>
+of <span  class="math">\(X\)</span>, we define the Cech Cohomology of <span  class="math">\(F\)</span> as the cohomology
+of the cochain complex</p>
+
+<p><span  class="math">\[
+(C^\bullet (\mathcal{U},F), \delta^\bullet) \hspace{0.5cm}
+{\rm where} \hspace{0.5cm}
+C^p (\mathcal{U},F)  = \prod\limits_{|I| = p + 1} F(U_I) \hspace{0.5cm}
+{\rm for}\hspace{0.5cm}
+I \in N(\mathcal{U}).
+\]</span></p>
+
+<p>where <span  class="math">\(U_I = \cap_{i \in I} U_i\)</span>. In order to define the differential <span  class="math">\(\delta\)</span>,
+we need to choose an ordering of the indexing set <span  class="math">\(\Lambda\)</span>. Thus, given a
+cochain <span  class="math">\(s \in C^p (\mathcal{U},F)\)</span>, its image is defined on each coordinate as</p>
+
+<p><span  class="math">\[
+(\delta^p (s))_I =  \sum_{k = 0}^{p+1} (-1)^k \rho_{U_I, U_{I(k)}}(s_{I(k)}) 
+\]</span></p>
+
+<p>where <span  class="math">\(I = \{i_0,\ldots, i_{p+1}\}\subset \Lambda\)</span>, <span  class="math">\(i_0 < i_2 < \ldots < i_{p+1}\)</span>
+the ordering inherited from <span  class="math">\(\Lambda\)</span> and <span  class="math">\(I(k)\)</span> denotes <span  class="math">\(I \setminus \{i_k\}\)</span>.
+Therefore the <span  class="math">\(p^{\rm th}\)</span> Cech Cohomology group of <span  class="math">\(F\)</span> is defined by the quotient</p>
+
+<p><span  class="math">\[
+{\check H}^p(\mathcal{U}, F) = \frac{{\rm ker}(\delta^p)}{{\rm im}(\delta^{p-1})} \hspace{0.5cm}
+{\rm i.e.} \hspace{0.5cm}
+H^p(C^\bullet (\mathcal{U},F)).
+\]</span></p>
+
+<p>In order to ensure that the above definition is correct, we need to prove the following lemma.</p>
+
+<p>The differential <span  class="math">\(\delta\)</span> in the cochain complex <span  class="math">\(C^\bullet (\mathcal{U},F)\)</span>
+for a cover <span  class="math">\(\mathcal{U}\)</span> and a pre-sheaf <span  class="math">\(F\)</span>, satisfies the identity
+<span  class="math">\(\delta^{p+1} \circ \delta^p = 0\)</span> for all <span  class="math">\(p \in \mathbb{Z}\)</span>.</p>
+
+<p>Let <span  class="math">\(s \in C^p (\mathcal{U},F)\)</span>, we focus on each coordinate
+<span  class="math">\(I \subset \Lambda\)</span> with <span  class="math">\(|I| = p + 3\)</span></p>
+
+<p><span  class="math">\(
+\begin{align*}
+(\delta^{p+1} \circ \delta^p (s))_I  &= \sum_{k = 0}^{p+2} (-1)^k \rho_{U_I, U_{I(k)}}(\delta^p(s)_{I(k)}) \\
+ &=\sum_{k = 0}^{p+2}(-1)^k \left( \sum_{j = 0}^{k-1}  (-1)^j \rho_{U_I, U_{I(k)}}  \rho_{U_{I(k)}, U_{I(j,k)}}(s_{I(j,k)}) + \sum_{j=k+1}^{p+2} (-1)^{j-1} \rho_{U_I, U_{I(k)}}  \rho_{U_{I(k)}, U_{I(k,j)}}(s_{I(k, j)}) \right) \\
+ &=\sum_{k = 0}^{p+2}\sum_{j = 0}^{k-1} (-1)^{k + j}  \rho_{U_I, U_{I(k)}}  \rho_{U_{I(k)}, U_{I(j,k)}}(s_{I(j,k)}) + \sum_{k = 0}^{p+2} \sum_{j=k+1}^{p+2}(-1)^{j + (k -1)} \rho_{U_I, U_{I(j)}}  \rho_{U_{I(j)}, U_{I(j,k)}}(s_{I(j,k)}) \\
+ &=\sum \limits_{k = 0}^{p+2} \sum \limits_{j = 0}^{k-1} \left( (-1)^{k + j}  \rho_{U_I, U_{I(k)}}  \rho_{U_{I(k)}, U_{I(j,k)}}(s_{I(j,k)}) + (-1)^{j + (k -1)} \rho_{U_I, U_{I(j)}}  \rho_{U_{I(j)}, U_{I(j,k)}}(s_{I(j,k)}) \right) = 0
+\end{align*}
+\)</span>
+where the last equality follow from the correspondence between the pairs
+<span  class="math">\((k,j)\)</span> in the first sum with the pairs <span  class="math">\((k',j')=(j,k)\)</span> from the second sum,
+ and the commutativity of the following two diagrams:</p>
+
+<div>$$
+\xymatrix{
+\ & U_I^{(j,k)} & \\
+U_I^{(j)} \ar[ur] & \  & U_I^{(k)} \ar[ul]\\
+\ & U_I \ar[ur] \ar[ul] \ar[uu]
+}
+\hspace{1cm}
+\xymatrix{
+\ & F(U_I^{(j,k)}) \ar[ld]_{ \rho_{U_I^{(j)}, U_I^{(j,k)}}} \ar[rd]^{ \rho_{U_I^{(k)}, U_I^{(j,k)}}} \ar[dd] & \\
+F(U_I^{(j)}) \ar[dr]_{ \rho_{U_I, U_I^{(j)}}} & \  & F(U_I^{(k)}) \ar[dl]^{ \rho_{U_I, U_I^{(k)}}}\\
+\ & F(U_I) 
+}
+$$</div>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
+  integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
+  crossorigin="anonymous">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    "HTML-CSS": {
+      styles: {".MathJax_Preview": {visibility: "hidden"}}
+    },
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+    TeX: {extensions: ["AMSmath.js","AMSsymbols.js","http://sonoisa.github.io/xyjax_ext/xypic.js"]}
+    //                                               ^^^^^^^^load xypic.js
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+
+    
+
+
+
+    </body>
+</html>

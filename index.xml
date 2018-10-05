@@ -6,10 +6,21 @@
     <description>Recent content on (Co)sheaf club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Sep 2018 14:51:10 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 05 Oct 2018 11:26:13 +0200</lastBuildDate>
     
 	<atom:link href="https://cosheafclub.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cech Cohomology of Pre-Sheaves</title>
+      <link>https://cosheafclub.github.io/posts/presheaf_check_cohomology/</link>
+      <pubDate>Fri, 05 Oct 2018 11:26:13 +0200</pubDate>
+      
+      <guid>https://cosheafclub.github.io/posts/presheaf_check_cohomology/</guid>
+      <description>Let \(X\) be a topological space and let \(F\) be a pre-sheaf of vector spaces on \(X\). Given an open cover \(\mathcal{U} = \{ U_i \}_{I \in \Lambda}\) of \(X\), we define the Cech Cohomology of \(F\) as the cohomology of the cochain complex
+\[ (C^\bullet (\mathcal{U},F), \delta^\bullet) \hspace{0.5cm} {\rm where} \hspace{0.5cm} C^p (\mathcal{U},F) = \prod\limits_{|I| = p + 1} F(U_I) \hspace{0.5cm} {\rm for}\hspace{0.5cm} I \in N(\mathcal{U}). \]
+where \(U_I = \cap_{i \in I} U_i\).</description>
+    </item>
     
     <item>
       <title>Help</title>
@@ -20,15 +31,6 @@
       <description>Setup local environment:
  Install Git Install Hugo Execute the command: git clone https://github.com/cosheafclub/hugo-blog.git  Create a post:
  Go to the directory hugo-blog Execute the command: hugo new posts/&amp;lt;post-name&amp;gt;.mmark Edit the file content/posts/&amp;lt;post-name&amp;gt;.mmark with your favorite text editor. Before uploading the content, try it in your computer by running the command hugo server -D. Open a web browser and go to http://localhost:1313/ Once you are happy run execute the command hugo, commit and push the repository.</description>
-    </item>
-    
-    <item>
-      <title>Sheaf story</title>
-      <link>https://cosheafclub.github.io/posts/sheafstory/</link>
-      <pubDate>Sun, 16 Sep 2018 14:10:31 +0200</pubDate>
-      
-      <guid>https://cosheafclub.github.io/posts/sheafstory/</guid>
-      <description></description>
     </item>
     
   </channel>
